@@ -1,0 +1,145 @@
+/* CSS Reset */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+body {
+  min-height: 100vh;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+textarea,
+button,
+select {
+  font: inherit;
+}
+
+ul li a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+/*End of CSS Reset */
+
+:root {
+  /* ## Colors */
+
+  /* ### Primary */
+
+  --soft-red: hsl(7, 99%, 70%);
+  --yellow: hsl(51, 100%, 49%);
+  --dark-desaturated-cyan: hsl(167, 40%, 24%); /*(graphic design text) */
+  --dark-blue: hsl(198, 62%, 26%); /*(photography text) */
+  --dark-moderate-cyan: hsl(168, 34%, 41%); /*(footer) */
+
+  /* ### Neutral */
+
+  --very-dark-desaturated-blue: hsl(212, 27%, 19%);
+  --very-dark-grayish-blue: hsl(213, 9%, 39%);
+  --dark-grayish-blue: hsl(232, 10%, 55%);
+  --grayish-blue: hsl(210, 4%, 67%);
+  --white: hsl(0, 0%, 100%);
+
+  /* ## Typography */
+
+  --fs: 18px;
+  --ff-barlow: "Barlow", sans-serif;
+  --ff-fraunces: "Fraunces", serif;
+}
+
+body {
+  font-family: var(--ff-barlow);
+}
+
+main {
+}
+
+header {
+  background: url(./images/mobile/image-header.jpg) no-repeat bottom center;
+  background-size: cover;
+  height: 517px;
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 1.5rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.nav-icon {
+  cursor: pointer;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: center;
+  background-color: var(--white);
+  position: absolute;
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.header-menu {
+  /* display: none; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.header-nav .header-menu li {
+}
+
+.header-menu a {
+  font-size: 1.2rem;
+  color: var(--dark-grayish-blue);
+}
+
+li .btn-contact {
+  background-color: var(--yellow);
+  padding: 0.7rem 1.2rem;
+  color: black;
+  text-transform: uppercase;
+  font-family: var(--ff-fraunces);
+  font-size: 1rem;
+  letter-spacing: -1px;
+  border-radius: 30px;
+}
+
+h1 {
+  text-transform: uppercase;
+  color: var(--white);
+  font-family: var(--ff-fraunces);
+  font-size: 2.5rem;
+  text-align: center;
+  letter-spacing: 6px;
+  margin-bottom: 2.5rem;
+}
+
+.arrow {
+  margin: 0 auto;
+}
