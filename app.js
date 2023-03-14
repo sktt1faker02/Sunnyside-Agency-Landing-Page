@@ -1,5 +1,6 @@
 const navIcon = document.querySelector(".nav-icon");
+const headerMenu = document.querySelector(".header-nav");
 
 navIcon.addEventListener("click", () => {
-  console.log("Hello");
+  headerMenu.classList.toggle("showMenu");
 });
