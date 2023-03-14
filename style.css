@@ -416,6 +416,10 @@ footer > img {
     display: none;
   }
 
+  .logo {
+    width: 10.625rem;
+  }
+
   header {
     height: 643px;
   }
